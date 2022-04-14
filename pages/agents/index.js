@@ -10,7 +10,9 @@ export default function Agents({ agentDatas }) {
     <Box>
       <Flex>
         {agentDatas.map((agentData) => (
-          <div key={agentData.id}>test</div>
+          <div key={agentData.id}>
+            {agentData.agents.map((agent) => ({ agent }))}
+          </div>
         ))}
       </Flex>
     </Box>
